@@ -23,7 +23,7 @@ def reverse_haversine(point,distance,bearing):
     theta=math.radians(bearing)
     lat2=math.degrees(math.asin(math.sin(la1)*math.cos(ad)+math.cos(la1)*math.cos(theta)*math.sin(ad)))
     lon2=math.degrees(lo1+math.atan2(math.sin(theta)*math.sin(ad)*math.cos(la1),math.cos(ad)-math.sin(la1)*math.sin(lat2)))
-    return LocationGlobal(lat2,lon2,60)
+    return LocationGlobal(lat2,lon2,20)
 
 def goto_waypoint(point):
     vehicle.simple_goto(point)
