@@ -56,7 +56,7 @@ while not vehicle.armed:
 else:
     print("Vehicle armed")
 
-altitude=20
+altitude=1.5
 vehicle.simple_takeoff(altitude)
 while vehicle.location.global_relative_frame.alt<0.95*altitude:
     print("Gaining altitude. Current Altitude is: ",vehicle.location.global_relative_frame.alt)
