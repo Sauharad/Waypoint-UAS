@@ -63,16 +63,16 @@ while vehicle.location.global_relative_frame.alt<0.95*altitude:
     time.sleep(1)
 
 print("Moving towards waypoint 1")
-goto_waypoint(reverse_haversine(waypoint1,10,180))
+goto_waypoint(waypoint1)
 
 print("Moving towards waypoint 2")
-goto_waypoint(reverse_haversine(waypoint2,10,180))
+goto_waypoint(waypoint2)
 
 print("Moving towards waypoint 3")
-goto_waypoint(reverse_haversine(waypoint3,10,180))
+goto_waypoint(waypoint3)
 
 print("Moving towards waypoint 4")
-goto_waypoint(reverse_haversine(waypoint4,10,180))
+goto_waypoint(waypoint4)
 
 vehicle.mode=VehicleMode("LAND")
 while True:
